@@ -6,6 +6,11 @@ ActionController::Routing::Routes.draw do |map|
   # -- just remember to delete public/index.html.
   map.root :controller => 'pages', :action => 'home'
 
+    map.help    '/help',    :controller => 'pages', :action => 'help'
+
+  map.signup '/signup',   :controller => 'users', :action => 'new'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 
