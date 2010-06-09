@@ -23,5 +23,17 @@ module Autotest::GnomeNotify
     end
   end
 
+
+
+Autotest.add_hook :initialize do |autotest|
+  autotest.add_mapping(%r%^spec/(integration)/.*rb$%) do|filename, _|
+    filename
+  end
+end
+
+
+
+
+
 end
 
